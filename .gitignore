@@ -1,0 +1,45 @@
+# API keys
+.env
+
+# Embedding model (symlinked or large)
+models/
+
+# Generated indexes
+data/indexes/
+
+# Session logs
+data/logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+
+# SQLite database (single-file)
+data/kb.sqlite3
+data/kb.sqlite3-wal
+data/kb.sqlite3-shm
+
+# Eval outputs
+eval/evaluation_report.html
+eval/evaluation_report.json
+data/traces/
+data/high_level_graph.json
+data/business/

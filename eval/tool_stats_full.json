@@ -1,0 +1,15 @@
+{
+  "queries": 252,
+  "errors": 0,
+  "total_tool_calls": 560,
+  "avg_calls_per_query": 2.2,
+  "avg_iterations": 2.9,
+  "distribution": {
+    "lookup_regulation": 278,
+    "search_knowledge_base": 240,
+    "get_service_info": 22,
+    "check_safety": 16,
+    "request_human_transfer": 4
+  },
+  "elapsed_s": 1786
+}

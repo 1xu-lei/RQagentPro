@@ -1,0 +1,51 @@
+agent:
+  conversation_history_turns: 2
+  max_iterations: 5
+  stream_chunk_delay: 0.01
+app:
+  debug: false
+  description: 衡阳燃气AI智能客服系统 — 分层架构版
+  name: RQagentPro
+  version: 3.1.0
+llm:
+  api_url: https://api.deepseek.com/chat/completions
+  max_retries: 1
+  max_tokens: 1000
+  model: deepseek-v4-flash
+  provider: deepseek
+  temperature: 0.1
+  timeout: 20
+logging:
+  format: structured
+  level: INFO
+  log_dir: data/logs
+  max_log_files: 50
+paths:
+  bm25_index: data/indexes/bm25.pkl
+  embed_model: models/bge-base-zh-v1.5
+  faiss_index: data/indexes/faiss.index
+  graph_export: data/graph_export.json
+  index_dir: data/indexes
+  knowledge_base: data/kb.sqlite3
+  log_dir: data/logs
+  prompt_dir: config/prompts
+retriever:
+  faiss_dim: 256
+  rerank_top_k: 3
+  similarity_threshold: 0.35
+  top_k: 8
+  use_reranker: false
+safety:
+  enable_hard_gateway: true
+  enable_semantic_check: true
+  extra_keywords: []
+  extra_negation_patterns: []
+server:
+  cors_origins:
+  - '*'
+  host: 0.0.0.0
+  port: 8001
+session:
+  max_sessions: 500
+  persist_to_disk: true
+  ttl_minutes: 60

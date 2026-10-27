@@ -1,0 +1,65 @@
+# ============================================================
+# 意图分类提示词 — 已对齐规范标签体系 (12域65标签)
+# ============================================================
+
+# Few-shot 分类系统提示
+system: "你是一个燃气客服意图分类系统。根据用户输入归类到对应的标签体系中。只输出JSON，不要其他内容。"
+
+# 分类规则
+rules:
+  - "优先看用户的核心诉求词（如'缴费''报装''漏气'等）"
+  - "信息查询类（电话/地址/时间）归入'营业服务'或对应业务域"
+  - "安全相关（泄漏/中毒/爆炸等）归入'安全用气'"
+  - "模糊不清的归入'增值与其他'，confidence 设为 0.3-0.5"
+  - "短追问（≤10字）结合上轮意图判断"
+
+# 输出格式
+output_format:
+  intent_name: "一级域名称"
+  sub_intent: "二级标签名称"
+  confidence: 0.85
+  reasoning: "分类依据（可选）"
+
+# Few-shot 示例（对齐规范标签体系）
+examples:
+  - query: "家里闻到煤气味了怎么办"
+    output:
+      intent_name: "安全用气"
+      sub_intent: "泄漏应急处置"
+      confidence: 0.95
+
+  - query: "怎么在手机上缴燃气费"
+    output:
+      intent_name: "缴费充值"
+      sub_intent: "线上缴费操作"
+      confidence: 0.90
+
+  - query: "燃气过户需要什么材料"
+    output:
+      intent_name: "报装开户"
+      sub_intent: "过户变更"
+      confidence: 0.88
+
+  - query: "报警器一直响怎么回事"
+    output:
+      intent_name: "安全用气"
+      sub_intent: "报警器报警处置"
+      confidence: 0.92
+
+  - query: "衡阳燃气投诉电话多少"
+    output:
+      intent_name: "投诉建议"
+      sub_intent: "服务热线"
+      confidence: 0.85
+
+  - query: "灶具打不着火怎么办"
+    output:
+      intent_name: "报修抢修"
+      sub_intent: "灶具/热水器打不着火"
+      confidence: 0.87
+
+  - query: "今天天气怎么样"
+    output:
+      intent_name: "增值与其他"
+      sub_intent: "闲聊/无关问题"
+      confidence: 0.30

@@ -1,0 +1,375 @@
+# 标签体系（唯一真相源）：12 个一级域 / 65 个二级标签
+# safety_sensitive: true = 安全敏感标签（命中走标准安全话术 + 强制转人工/播报抢修电话）
+# aliases = KB 旧域名 → 规范域名（自映射由代码生成，无需在此列出）
+domains:
+- code: BZ
+  name: 报装开户
+  sub_labels:
+  - code: BZ-01
+    name: 居民新装报装
+    examples: 我家新房怎么开通天然气？
+    regulation: FG-15
+    safety_sensitive: false
+  - code: BZ-02
+    name: 商业/工商业报装
+    examples: 开饭店要装燃气怎么申请？
+    regulation: FG-15 / FG-17
+    safety_sensitive: false
+  - code: BZ-03
+    name: 报装所需材料
+    examples: 报装要带什么证件？
+    regulation: FG-15
+    safety_sensitive: false
+  - code: BZ-04
+    name: 报装进度查询
+    examples: 我上周报装了到哪一步了？
+    regulation: ''
+    safety_sensitive: false
+  - code: BZ-05
+    name: 报装收费标准
+    examples: 开户费多少钱？
+    regulation: FG-23
+    safety_sensitive: false
+  - code: BZ-06
+    name: 过户变更
+    examples: 房子买了怎么把燃气过户？
+    regulation: ''
+    safety_sensitive: false
+  - code: BZ-07
+    name: 销户退费
+    examples: 搬走了要销户怎么办？
+    regulation: ''
+    safety_sensitive: false
+- code: JF
+  name: 缴费充值
+  sub_labels:
+  - code: JF-01
+    name: 缴费渠道咨询
+    examples: 在哪能交燃气费？
+    regulation: FG-17
+    safety_sensitive: false
+  - code: JF-02
+    name: 线上缴费操作
+    examples: 微信怎么交燃气费？
+    regulation: ''
+    safety_sensitive: false
+  - code: JF-03
+    name: IC卡充值
+    examples: 燃气卡怎么充值？
+    regulation: ''
+    safety_sensitive: false
+  - code: JF-04
+    name: 欠费停气规则
+    examples: 欠费多久会停气？
+    regulation: FG-27
+    safety_sensitive: false
+  - code: JF-05
+    name: 发票开具
+    examples: 燃气费能开发票吗？
+    regulation: ''
+    safety_sensitive: false
+  - code: JF-06
+    name: 代扣/自动缴费
+    examples: 怎么办理银行代扣？
+    regulation: ''
+    safety_sensitive: false
+- code: CB
+  name: 抄表计量
+  sub_labels:
+  - code: CB-01
+    name: 抄表周期查询
+    examples: 多久抄一次表？
+    regulation: ''
+    safety_sensitive: false
+  - code: CB-02
+    name: 自主上报读数
+    examples: 我自己怎么报表数？
+    regulation: ''
+    safety_sensitive: false
+  - code: CB-03
+    name: 用气量异常核查
+    examples: 这月气费怎么翻倍了？
+    regulation: FG-29
+    safety_sensitive: false
+  - code: CB-04
+    name: 表具故障/停走
+    examples: 燃气表不走字了
+    regulation: FG-19
+    safety_sensitive: false
+  - code: CB-05
+    name: 换表/校表申请
+    examples: 怎么申请换新表？
+    regulation: FG-30
+    safety_sensitive: false
+  - code: CB-06
+    name: 阶梯气量政策
+    examples: 阶梯气价怎么算？
+    regulation: FG-23
+    safety_sensitive: false
+- code: BX
+  name: 报修抢修
+  sub_labels:
+  - code: BX-01
+    name: 燃气泄漏报警
+    examples: 家里有股煤气味！
+    regulation: FG-40 / FG-42
+    safety_sensitive: true
+  - code: BX-02
+    name: 报警器鸣叫
+    examples: 报警器一直响怎么办？
+    regulation: FG-40
+    safety_sensitive: true
+  - code: BX-03
+    name: 灶具/热水器打不着火
+    examples: 热水器打不着火
+    regulation: FG-32
+    safety_sensitive: false
+  - code: BX-04
+    name: 管道/接口漏气
+    examples: 闻到管道口有味道
+    regulation: FG-40 / FG-42
+    safety_sensitive: true
+  - code: BX-05
+    name: 抢修进度/时效
+    examples: 报修了多久能来人？
+    regulation: FG-19
+    safety_sensitive: false
+  - code: BX-06
+    name: 抢修电话查询
+    examples: 抢修电话是多少？
+    regulation: FG-42
+    safety_sensitive: false
+  - code: BX-07
+    name: 户内设施维修
+    examples: 胶管老化要换
+    regulation: FG-27
+    safety_sensitive: false
+- code: AQ
+  name: 安全用气
+  sub_labels:
+  - code: AQ-01
+    name: 安全使用常识
+    examples: 用气要注意什么？
+    regulation: FG-27
+    safety_sensitive: false
+  - code: AQ-02
+    name: 泄漏应急处置
+    examples: 漏气了我该先做什么？
+    regulation: FG-40
+    safety_sensitive: true
+  - code: AQ-03
+    name: 用户禁止行为
+    examples: 能自己动公用阀门吗？
+    regulation: FG-28
+    safety_sensitive: false
+  - code: AQ-04
+    name: 安全检查配合
+    examples: 为什么要入户安检？
+    regulation: FG-17 / FG-27
+    safety_sensitive: false
+  - code: AQ-05
+    name: 器具超期更换
+    examples: 灶具用几年要换？
+    regulation: FG-27
+    safety_sensitive: false
+  - code: AQ-06
+    name: 一氧化碳中毒预防
+    examples: 怎么防煤气中毒？
+    regulation: FG-27
+    safety_sensitive: true
+  - code: AQ-07
+    name: 私改管道后果
+    examples: 自己改燃气管道行吗？
+    regulation: FG-28 / FG-49
+    safety_sensitive: false
+- code: QJ
+  name: 燃气器具
+  sub_labels:
+  - code: QJ-01
+    name: 器具选购/适配
+    examples: 买灶具要注意气源吗？
+    regulation: FG-31
+    safety_sensitive: false
+  - code: QJ-02
+    name: 器具安装服务
+    examples: 你们负责装灶具吗？
+    regulation: FG-32
+    safety_sensitive: false
+  - code: QJ-03
+    name: 器具报修售后
+    examples: 热水器坏了找谁修？
+    regulation: FG-32
+    safety_sensitive: false
+  - code: QJ-04
+    name: 连接管/胶管咨询
+    examples: 金属波纹管好还是胶管好？
+    regulation: FG-27
+    safety_sensitive: false
+  - code: QJ-05
+    name: 自闭阀/报警器购买
+    examples: 在哪买燃气报警器？
+    regulation: FG-27
+    safety_sensitive: false
+- code: JG
+  name: 价格政策
+  sub_labels:
+  - code: JG-01
+    name: 居民气价标准
+    examples: 现在天然气多少钱一方？
+    regulation: FG-23
+    safety_sensitive: false
+  - code: JG-02
+    name: 工商业气价
+    examples: 商业用气怎么收费？
+    regulation: FG-23
+    safety_sensitive: false
+  - code: JG-03
+    name: 调价通知/政策
+    examples: 听说要涨价是真的吗？
+    regulation: FG-23
+    safety_sensitive: false
+  - code: JG-04
+    name: 收费项目明细
+    examples: 都有哪些收费项目？
+    regulation: FG-17 / FG-23
+    safety_sensitive: false
+- code: TS
+  name: 投诉建议
+  sub_labels:
+  - code: TS-01
+    name: 服务态度投诉
+    examples: 你们师傅态度太差了
+    regulation: FG-29
+    safety_sensitive: false
+  - code: TS-02
+    name: 乱收费投诉
+    examples: 怀疑被多收费了
+    regulation: FG-23 / FG-29
+    safety_sensitive: false
+  - code: TS-03
+    name: 抢修不及时投诉
+    examples: 报修一天没人来
+    regulation: FG-19 / FG-29
+    safety_sensitive: false
+  - code: TS-04
+    name: 投诉处理时效
+    examples: 投诉多久有回复？
+    regulation: FG-29
+    safety_sensitive: false
+  - code: TS-05
+    name: 表扬建议
+    examples: 想表扬一位师傅
+    regulation: ''
+    safety_sensitive: false
+- code: ZH
+  name: 账户信息
+  sub_labels:
+  - code: ZH-01
+    name: 户号查询
+    examples: 我的燃气户号是多少？
+    regulation: ''
+    safety_sensitive: false
+  - code: ZH-02
+    name: 用气历史查询
+    examples: 查一下近半年用量
+    regulation: ''
+    safety_sensitive: false
+  - code: ZH-03
+    name: 手机号/信息变更
+    examples: 换了手机号怎么改？
+    regulation: ''
+    safety_sensitive: false
+  - code: ZH-04
+    name: 账单明细
+    examples: 这个月账单明细看一下
+    regulation: ''
+    safety_sensitive: false
+- code: YY
+  name: 营业服务
+  sub_labels:
+  - code: YY-01
+    name: 营业网点地址
+    examples: 最近的营业厅在哪？
+    regulation: FG-17
+    safety_sensitive: false
+  - code: YY-02
+    name: 营业时间
+    examples: 周末上班吗？
+    regulation: FG-17
+    safety_sensitive: false
+  - code: YY-03
+    name: 服务热线
+    examples: 客服电话多少？
+    regulation: FG-17
+    safety_sensitive: false
+  - code: YY-04
+    name: 上门服务预约
+    examples: 能预约上门安检吗？
+    regulation: ''
+    safety_sensitive: false
+- code: TQ
+  name: 停气复气
+  sub_labels:
+  - code: TQ-01
+    name: 计划停气通知
+    examples: 明天为什么停气？
+    regulation: FG-20
+    safety_sensitive: false
+  - code: TQ-02
+    name: 突发停气咨询
+    examples: 怎么突然没气了？
+    regulation: FG-20 / FG-21
+    safety_sensitive: true
+  - code: TQ-03
+    name: 复气/点火服务
+    examples: 来气了怎么重新点火？
+    regulation: FG-20
+    safety_sensitive: true
+  - code: TQ-04
+    name: 欠费复气办理
+    examples: 交了费怎么恢复供气？
+    regulation: FG-27
+    safety_sensitive: false
+  - code: TQ-05
+    name: 区域停气范围查询
+    examples: 我们小区停气吗？
+    regulation: FG-20
+    safety_sensitive: false
+- code: QT
+  name: 增值与其他
+  sub_labels:
+  - code: QT-01
+    name: 燃气保险咨询
+    examples: 有没有燃气意外险？
+    regulation: ''
+    safety_sensitive: false
+  - code: QT-02
+    name: 加装/迁改管道
+    examples: 想把管道挪个位置
+    regulation: FG-30 / FG-38
+    safety_sensitive: true
+  - code: QT-03
+    name: 政策法规咨询
+    examples: 私接燃气犯法吗？
+    regulation: FG-28 / FG-49
+    safety_sensitive: false
+  - code: QT-04
+    name: 闲聊/无关问题
+    examples: 你是机器人吗？
+    regulation: ''
+    safety_sensitive: false
+  - code: QT-05
+    name: 转人工请求
+    examples: 我要人工客服
+    regulation: ''
+    safety_sensitive: false
+aliases:
+  气费管理: 缴费充值
+  政策咨询: 价格政策
+  上门服务: 营业服务
+  系统操作: 增值与其他
+  业务办理: 报装开户
+  燃气咨询: 价格政策
+  安装维修: 报修抢修
+  服务管理: 营业服务
+  故障处理: 报修抢修
